@@ -8,7 +8,6 @@ yum update -y
 
 
 yum install -y git gcc-c++ ncurses-devel python-devel cmake wget make
-yum install -y python36 python36-devel
 
 
 cd ~
@@ -18,9 +17,7 @@ cd vim-8.1.0000/
 
 ./configure --prefix=/usr/local/vim  \
 --enable-pythoninterp=yes \
---enable-python3interp=yes \
 --with-python-command=python \
---with-python3-command=python36
 
 make && make install
 
